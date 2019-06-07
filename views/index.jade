@@ -2,4 +2,20 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Please use the apiKey to check the API's from POSTMAN.
+  h3 apikey = #{apiKey}
+  p Send this api key as an Authorization header eg. Authorization:#{apiKey}
+
+  //- p You can also check the api's from the form below
+  //- div(style="display:flex;flex-direction:column")
+  //-   div(style="flex:1")
+  //-     label(for="url") Url
+  //-     input#url(type="text", name="")
+  //-   div(style="flex:1")
+  //-     label(for="reqBody") Body
+  //-     textarea#reqBody(name="", cols="30", rows="10")
+  //-   div(style="flex:1")
+  //-     button#getData(type="submit") Submit
+  //-   div(style="flex:1")
+  //-     label(for="response") Response
+  //-     textarea#response(name="", cols="30", rows="10")
